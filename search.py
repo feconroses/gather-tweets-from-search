@@ -9,10 +9,10 @@ from requests.packages.urllib3.exceptions import ReadTimeoutError
 https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets.html'''
 
 # Add your Twitter API credentials
-consumer_key = "consumer_key"
-consumer_secret = "consumer_secret"
-access_key = "access_key"
-access_secret = "access_secret"
+consumer_key = "aiPtzb3YYs9X1yNklLFYezl3H"
+consumer_secret = "BpIOBEIfvThiYWYmtvJeCTNK8BsO0rg29ejTT3nRPunXH9vQbf"
+access_key = "24265390-NL7FCwJHipiQTPrWgIsmhLtuW87qa41nkVJvuokUc"
+access_secret = "z2RJZsmsrbAL8rwCaWHdXUd818NfROCmPZmdPcNoqgFvl"
 
 # Handling authentication with Twitter
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -27,8 +27,12 @@ search_words = "#seo"
 # Exclude retweets in our search
 new_search = search_words + " -filter:retweets"
 
-# Define the dates of creation of the tweets we are looking for
-date_since = "2019-04-24"
+'''Search for tweets created before a given date.
+Keep in mind that the Twitter Standard Search API has a 7-day limit. 
+In other words, no tweets will be found for a date older than one week.'''  
+date_since = "2019-05-18"
+
+# Define until what date we are looking for tweets
 date_until = ""
 
 # Total tweets to gather in our search

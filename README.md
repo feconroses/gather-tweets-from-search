@@ -1,6 +1,10 @@
 # About
 
-Python script for searching tweets with a particular keyword, hashtag, or mention using the Twitter Search API, and save them on a CSV file.
+Python script for searching tweets with a particular keyword, hashtag, or mention using the Twitter Search API, and save them on a CSV file. 
+
+Keep in mind that [Twitter Standard Search API](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets.html) has a 7-day limit. In other words, no tweets will be found for a date older than one week.
+
+`sample-tweets.csv` is a sample file for a search around SEO.
 
 # Requirements
 
